@@ -1,0 +1,39 @@
+:root{
+    --section-overlay: rgba(0,0,0,0.7);
+    --background-overlay: rgba(0,0,0,0.2);
+  
+  }
+
+.section__description{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+}
+.card {
+    background-color: var(--section-overlay);
+    padding: 2rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.description__cardIcon{
+    width: 100%;
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 12px;
+}
+.description__cardIcon h6{
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width:1024px){
+    .section__description {
+        grid-template-columns: 1fr 1fr;
+    }
+}
